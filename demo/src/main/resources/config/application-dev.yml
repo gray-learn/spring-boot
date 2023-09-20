@@ -1,0 +1,11 @@
+server:
+  port: 8086
+logging:
+  level:
+    root: debug
+    com.gray.springbootdemo: debug
+  file: config/logsyml/my.log
+
+#  application-{profile}.yml
+
+

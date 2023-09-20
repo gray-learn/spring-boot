@@ -1,0 +1,8 @@
+server:
+  port: 8085
+logging:
+  level:
+    root: warn
+    com.gray.springbootdemo: info
+  file: config/logsyml/my.log
+

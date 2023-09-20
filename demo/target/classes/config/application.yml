@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: prod
+#  active: prod,dev
+
+#single envionment
+#server:
+##  port: 8082
+#  port: 8080
+##  context-path: /api
+#logging:
+#  level:
+#    root: info
+#    com.gray.springbootdemo: debug
+#  file: config/logsyml/my.log
+
+# self design
+# prefix
+book:
+  name: HelloFood
+  author: Kelly
+  isbn: ${random.uuid}
+  description: ${book.name}, good to read
+
+# json super class
