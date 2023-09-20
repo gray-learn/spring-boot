@@ -29,13 +29,14 @@ public class HelloController {
 
     @Autowired //ROC inject need @Component in Book
     private Book book;
-//    @RequestMapping(value = "/say",method = RequestMethod.GET)
 
-//    @GetMapping()
+
     @GetMapping("/getBook")
     public Object getBook(){
+        System.out.println("GetBook");
         return book;
     }
+    //    @RequestMapping(value = "/say",method = RequestMethod.GET)
     @GetMapping("/say")
     public String hello(){
         return "Hello SpringBoot~~";
