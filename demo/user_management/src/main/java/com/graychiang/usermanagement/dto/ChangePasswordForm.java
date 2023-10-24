@@ -1,0 +1,40 @@
+package com.graychiang.usermanagement.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+/**
+ * Created by IntelliJ IDEA.
+ * Project : user_management
+ * User: graychiang
+
+ * 
+ * Date: 22/03/20
+ * Time: 10.07
+ */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode
+public class ChangePasswordForm {
+    @NotNull
+    private Long id;
+
+    @NotBlank(message = "Current Password must not be blank")
+    private String currentPassword;
+
+    @NotBlank(message = "New Password must not be blank")
+    private String newPassword;
+
+    @NotBlank(message = "Confirm Password must not be blank")
+    private String confirmPassword;
+
+    public ChangePasswordForm(Long id) {
+        this.id = id;
+    }
+}
